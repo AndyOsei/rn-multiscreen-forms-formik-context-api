@@ -11,7 +11,8 @@ const initialState = {
 };
 
 const formReducer = (state, action) => {
-  switch (action.type) {
+  const { type, payload } = action;
+  switch (type) {
     case "SET_FORM":
       return {
         ...state,
